@@ -1,0 +1,80 @@
+.contentContainer {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0;
+    height: calc(100vh - 5rem);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: -1rem;
+}
+
+.hero {
+    max-width: 600px;
+
+    > span {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: 900;
+        margin-top: 2.5rem;
+
+        span {
+            color: #F50057;
+        }
+    }
+    h3 {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        font-weight: 900;
+        margin-top: 2rem;
+
+        span {
+            color: #F50057;
+        }
+    }
+    p {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        margin-top: 1.5rem;
+
+        span {
+            color: #F50057;
+            font-weight: bold;
+        }
+    }
+
+    button {
+        margin-top: 2.5rem;
+    }
+}
+
+.scheduleButton {
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--red-light);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 16px;
+
+    box-shadow: 0 0 1em var(--gray-300);
+
+    transition: filter 0.2s;
+
+    &:hover {
+        filter:brightness(0.8);
+    }
+  }

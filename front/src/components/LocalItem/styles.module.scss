@@ -1,0 +1,153 @@
+  .collapse {
+    border: solid 1px var(--gray-lighter);
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    transition: background-color 0.25s;
+    will-change: background-color;
+    margin-top: 1.2rem;
+    background-color: #FFFFFF;
+
+    body {
+        background-color: #FFFFFF;
+        color: #000000;
+        font-size: 16px;
+      }
+
+    details {
+        summary {
+          list-style: none;
+        }
+      }
+  
+    &:first-child {
+      margin-top: 3rem;
+    }
+  
+    &:not(:last-child) {
+      margin-bottom: var(--space-sm);
+    }
+  
+    &:hover {
+      background-color: var(--gray-lighter);
+  
+      .title:after {
+        content: "🙂";
+      }
+    }
+  
+    &[open] {
+      .title:after {
+        content: "😍";
+      }
+    }
+  }
+  
+  .title {
+    cursor: pointer;
+    font-weight: 600;
+    padding: var(--space-sm);
+    position: relative;
+  
+    &:after {
+      content: "😴";
+      position: absolute;
+      right: var(--space-sm);
+      transform: translatey(-50%);
+      top: 50%;
+    }
+  }
+  
+  .description {
+    border-top: var(--gray-light) solid 1px;
+    font-size: 14px;
+    line-height: 21px;
+    padding: var(--space-sm);
+  }
+  
+  .avatar {
+    width: 130px;
+    height: 130px;
+    display:flex;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hr {
+    width: 300px;
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 5px;
+    background: var(--yellow-500);
+    margin-bottom: 50px;
+    border-radius: 10px;
+  }
+
+  .scheduleButton {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--red-light);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 16px;
+
+    box-shadow: 0 0 1em var(--gray-300);
+
+    transition: filter 0.2s;
+
+    margin-top: 2rem;
+
+    &:hover {
+        filter:brightness(0.8);
+    }
+  }
+  
+  .react-modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.react-modal-content {
+    width: 100%;
+    max-width: 1000px;
+    background: #FFFFFF;
+    padding: 3rem;
+    position: relative;
+    border-radius: 0.24rem;
+}
+
+.containerModal {
+  max-width: 500px;
+  width: 20%;
+}
+
+.titleSchedule {
+  position: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 1rem;
+}
